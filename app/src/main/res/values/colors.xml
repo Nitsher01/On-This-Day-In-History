@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#090909</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="golden">#FFD700</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="SILVER">#C0C0C0</color>
+    <color name="OLIVE">#808000</color>
+    <color name="AQUA">#00FFFF</color>
+    <color name="LIME">#00FF00</color>
+    <color name="TEAL">#008000</color>
+    <color name="NAVY">#000080</color>
+    <color name="TRANS">#00000000</color>
+    <color name="BLUEBACK">#99FFFF</color>
+    <color name="ARTCLECOLOR">#3399FF</color>
+    <color name="CACHECOLOR">#8AD0E8</color>
+</resources>

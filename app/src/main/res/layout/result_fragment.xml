@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/childLayout"
+        android:orientation="vertical"
+        android:background="@drawable/layout_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:maxLines="1"
+            android:ems="10"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textColor="#000"
+            android:elevation="5dp"
+            android:id="@+id/tvDate" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+            >
+            <Button
+                android:text="Set Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:id="@+id/btSetDate" />
+            <Button
+                android:text="Get Events"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/btGetEvents" />
+            <Button
+                android:text="More Events"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:padding="6dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/btMoreEvents" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.twotoasters.jazzylistview.JazzyListView
+        android:id="@+id/jazzyList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="3dp"
+        android:dividerHeight="5dp"
+        android:background="#FFFFFF"
+        />
+
+</LinearLayout>
